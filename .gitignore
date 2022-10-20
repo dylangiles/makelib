@@ -1,0 +1,5 @@
+map/
+obj/
+*.dll
+*.lib
+*.exe

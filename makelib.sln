@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+# Clarion 2.1.0.2447
+Project("{12B76EC0-1D7B-4FA7-A7D0-C524288B48A1}") = "makelib", "makelib.cwproj", "{4BA5395E-9514-4ABF-A298-265BAFD6B926}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BA5395E-9514-4ABF-A298-265BAFD6B926}.Debug|Win32.Build.0 = Debug|Win32
+		{4BA5395E-9514-4ABF-A298-265BAFD6B926}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4BA5395E-9514-4ABF-A298-265BAFD6B926}.Release|Win32.Build.0 = Release|Win32
+		{4BA5395E-9514-4ABF-A298-265BAFD6B926}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+EndGlobal

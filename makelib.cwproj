@@ -1,0 +1,36 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{4BA5395E-9514-4ABF-A298-265BAFD6B926}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>makelib</RootNamespace>
+    <AssemblyName>makelib</AssemblyName>
+    <OutputName>makelib</OutputName>
+    <StartArguments>IN=C:\RCSDevClarion\Projects\clatoml\clatoml.dll OUT=C:\RCSDevClarion\Projects\clatoml\clatoml.lib</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <vid>full</vid>
+    <check_stack>True</check_stack>
+    <check_index>True</check_index>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <vid>off</vid>
+    <check_stack>False</check_stack>
+    <check_index>False</check_index>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="libmaker.clw" />
+    <Compile Include="makelib.clw" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileDriver Include="ASCII" />
+    <FileDriver Include="DOS" />
+  </ItemGroup>
+  <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
+</Project>
