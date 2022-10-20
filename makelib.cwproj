@@ -31,6 +31,7 @@
   <ItemGroup>
     <FileDriver Include="ASCII" />
     <FileDriver Include="DOS" />
+    <Library Include="makelib.version" />
   </ItemGroup>
   <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
 </Project>

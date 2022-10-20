@@ -3,3 +3,4 @@ obj/
 *.dll
 *.lib
 *.exe
+*.version.bak
